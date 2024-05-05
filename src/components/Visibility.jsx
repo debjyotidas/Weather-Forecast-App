@@ -1,8 +1,10 @@
 import React from 'react'
+import { Parallax } from 'react-next-parallax';
 
 function Visibility({stats}) {
   return (
     <>
+    <Parallax offsetMultiplier={2} scale={1.2}>
         <div className='bg-slate-600 p-2 flex flex-col justify-start items-center text-transform scale-100 hover:scale-125 transition-transform duration-300 ease-in-out cursor-pointer'>
             <h2 className='text-sm mt-2 text-slate-300'>Visibility</h2>
                 <div className="mt-2 text-slate-300">
@@ -12,6 +14,8 @@ function Visibility({stats}) {
                 </div>
 
         </div>
+    </Parallax>
+        
     </>
   )
 }
