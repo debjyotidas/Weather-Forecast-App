@@ -2,13 +2,11 @@ import React from 'react'
 import Humidity from './Humidity'
 import Visibility from './Visibility'
 import AirPressure from './AirPressure'
-import { Parallax } from 'react-next-parallax';
-
 
 function Highlights({stats}) {
   return (
     <>
-    <Parallax offsetMultiplier={2} scale={1.2}>
+   
     <div className='bg-slate-600 p-2 cursor-pointer flex flex-col justify-start items-center text-transform scale-100 hover:scale-125 transition-transform duration-300 ease-in-out'>
         <h2 className='text-sm mt-2 text-slate-300'>Wind Status</h2>
             <div className="mt-2 text-slate-300">
@@ -37,7 +35,6 @@ function Highlights({stats}) {
             </div>)
             :null}
     </div>
-    </Parallax>
         
             <Humidity stats={stats}/>
             <Visibility stats={stats}/>
